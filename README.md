@@ -1,1 +1,1 @@
-# Lowtide Project
+# Lotide Project
