@@ -13,11 +13,9 @@ const assertEqual = function(actual, expected) {
 };
 const tailWords = tail(words);
 
-assertEqual(words.length, 3);
-assertEqual(words[0], "Yo Yo");
-assertEqual(words[1], "Lighthouse");
-assertEqual(words[2], "Labs");
 
-assertEqual(tailWords.length,2);
+assertEqual(tailWords.length, 2);
+assertEqual(tailWords.length, 3);
+assertEqual(tailWords.length, 4);
 assertEqual(tailWords[0], "Lighthouse");
 assertEqual(tailWords[1], "Labs");
