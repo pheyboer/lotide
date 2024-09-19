@@ -33,16 +33,17 @@ const eqArrays = function(array1, array2) {
       return [array[middleIndex1], array[middleIndex2]];
     }
   }
+
 const arrayLessThanThree = [1, 2];
   middle(arrayLessThanThree);
   assertArraysEqual(middle(arrayLessThanThree), []);
 
 const evenArray = [1, 2, 3, 4];
   middle(evenArray);
-  assertArraysEqual(middle(evenArray)), [];
+  assertArraysEqual(middle(evenArray)), [2, 3];
 
 const oddArray =  [1, 2, 3, 4, 5];
   middle(oddArray);
-  assertArraysEqual(middle(oddArray)), [];
+  assertArraysEqual(middle(oddArray)), [3];
 
 
