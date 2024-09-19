@@ -37,9 +37,7 @@ const arrayLessThanThree = [1, 2];
 assertArraysEqual(middle(arrayLessThanThree), []);
 
 const evenArray = [1, 2, 3, 4];
-middle(evenArray);
 assertArraysEqual(middle(evenArray), [2, 3]);
 
 const oddArray =  [1, 2, 3, 4, 5];
-middle(oddArray);
 assertArraysEqual(middle(oddArray), [3]);
