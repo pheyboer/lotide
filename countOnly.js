@@ -17,10 +17,7 @@ const countOnly = function(allItems, itemsToCount) {
         results[item] = 1;
       }
     }
-    
-
   }
-
   return results;
 };
 
