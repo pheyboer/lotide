@@ -29,8 +29,14 @@ const without = function(source, itemsToRemove) {
   return resultArray;
 };
 
+
 const words = ["hello", "world", "lighthouse"];
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+const wordsCopy = [...words];
+const result = without(words, ["Lighthouse"]);
+
+
+assertArraysEqual(result, ["hello", "world"]);
+assertArraysEqual(words, wordsCopy);
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); //this one will fail
