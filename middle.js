@@ -26,8 +26,7 @@ const eqArrays = function(array1, array2) {
     if (length % 2 !== 0) {
       const middleIndex = Math.floor(length / 2);
       return [array[middleIndex]];
-    }
-    if (length % 2 === 0) {
+    } else {
       const middleIndex1 = (length / 2) -1;
       const middleIndex2 = length / 2;
       return [array[middleIndex1], array[middleIndex2]];
