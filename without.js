@@ -29,9 +29,6 @@ const without = function(source, itemsToRemove) {
   return resultArray;
 };
 
-console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]));
-
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"]));
 console.log(words);
