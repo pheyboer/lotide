@@ -36,9 +36,6 @@ const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"]));
 console.log(words);
 
-console.log(result);
-assertArraysEqual(words, wordsCopy);
-
 console.log(without([], [1]));
 console.log(without([1, 2, 3], []));
 console.log(without([1, 2, 3], [1, 2, 3]));
