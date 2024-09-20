@@ -25,6 +25,9 @@ console.log(result1);
 const result2 = countLetters("lighthouse");
 console.log(result2);
 
+assertEqual(result1['L'], 2);
+assertEqual(result1['H'], 1);
+
 
 //use for...of loop with string
 //function should take in a sentence as a string, and then return a count of each of the letters in that sentence
