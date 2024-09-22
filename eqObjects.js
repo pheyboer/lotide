@@ -20,13 +20,11 @@ const assertEqual = function(actual, expected) {
 
 
 const eqObjects = function(object1, object2) {
-  //check if same number of keys
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
 
   if (keys1.length !== keys2.length) {
     return false;
-    //different number of keys is not equal
   }
 
   for (let key of keys1) {
@@ -43,16 +41,13 @@ const eqObjects = function(object1, object2) {
 
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
-//eqObjects(shirtObject, anotherShirtObject);
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 
 
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-//eqObjects(shirtObject, longSleeveShirtObject);
 assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
 
-//const shirtObject = { color: "red", size: "medium" };
-//Object.keys(shirtObject);
+
 
 
 
