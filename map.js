@@ -8,19 +8,19 @@ const eqArrays = function(array1, array2) {
     }
   }
   return true;
-  };
+};
   
-  const assertArraysEqual = function(array1, array2) {
-    if (eqArrays(array1, array2)) {
-      console.log(`✅✅ Assertion Passed: ${array1} === ${array2}`);
-    } else {
-      console.log(`🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
-    }
-  };
+const assertArraysEqual = function(array1, array2) {
+  if (eqArrays(array1, array2)) {
+    console.log(`✅✅ Assertion Passed: ${array1} === ${array2}`);
+  } else {
+    console.log(`🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
+  }
+};
 
 const words = ["ground", "control", "to", "major", "tom"];
 
-const map = function (array, callback) {
+const map = function(array, callback) {
   const results = [];
   for (let item of array) {
     results.push(callback(item));
@@ -28,8 +28,6 @@ const map = function (array, callback) {
   return results;
 };
 
-
-const results1 = map(words, (word) => word[0]);
 
 //test cases
 //1: first letter of each word
