@@ -8,15 +8,15 @@ const eqArrays = function(array1, array2) {
     }
   }
   return true;
-  };
+};
   
-  const assertArraysEqual = function(array1, array2) {
-    if (eqArrays(array1, array2)) {
-      console.log(`✅✅ Assertion Passed: ${array1} === ${array2}`);
-    } else {
-      console.log(`🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
-    }
-  };
+const assertArraysEqual = function(array1, array2) {
+  if (eqArrays(array1, array2)) {
+    console.log(`✅✅ Assertion Passed: ${array1} === ${array2}`);
+  } else {
+    console.log(`🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
+  }
+};
 
 //eqArrays and assertArraysEqual functions above
 //new takeUntil function below with assertions
@@ -32,7 +32,7 @@ const takeUntil = function(array, callback) {
     result.push(item);
   }
   return result;
-}
+};
 // created an empty array to store items
 // iterate through each item of input array
 // check if callback returns truthy value -if it does exit, if it doesnt push item into the new result array
@@ -60,7 +60,7 @@ assertArraysEqual(results2, ["I've", "been", "to", "Hollywood", ",", "been"]);
 
 
 //takeUntil will take in 2 parameters
-// the array to work with 
+// the array to work with
 //and the callback (lodash calls this "predicate")
 //callback should only be provided one value until returns truthy value
 //because takeUntil returns arrays use assertArraysEqual to compare its return value against unexpected array
