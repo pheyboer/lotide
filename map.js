@@ -30,7 +30,6 @@ const map = function (array, callback) {
 
 
 const results1 = map(words, (word) => word[0]);
-console.log(results1);
 
 //test cases
 //1: first letter of each word
