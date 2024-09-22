@@ -1,3 +1,4 @@
+//objective: implement function findKey which takes in an object and a callback
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -80,7 +81,6 @@ testingFindKey();
 
 
 
-//objective: implement function findKey which takes in an object and a callback
 //it should scan the object and return the first key for which the callback returns a truthy value.
 //if no key found return undefined
 //core logic is from findKeyByValue
