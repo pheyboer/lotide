@@ -1,24 +1,11 @@
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-  
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`✅✅ Assertion Passed: ${array1} === ${array2}`);
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
+    console.log(`🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
-//eqArrays and assertArraysEqual functions previously made
 
 const findKey = (obj, callback) => { //defined function findKey that loops through keys of object with use of arrow function
   for (const key in obj) {
@@ -28,7 +15,7 @@ const findKey = (obj, callback) => { //defined function findKey that loops throu
   }
   return undefined;
 };
-//use example in compass and use assertArraysEqual to define new variable testingFindKey and make catagorey for each result
+//use example in compass and use assertEqual to define new variable testingFindKey and make catagorey for each result
 const testingFindKey = () => {
   const result1 = findKey(
     {
@@ -41,7 +28,7 @@ const testingFindKey = () => {
     },
     (x) => x.stars === 2 //test for 2 stars
   );
-  assertArraysEqual([result1], ["noma"]); //wrap result in an array
+  assertEqual(result1, "noma"); 
 
   const result2 = findKey(
     {
@@ -54,7 +41,7 @@ const testingFindKey = () => {
     },
     (x) => x.stars === 5
   );
-  assertArraysEqual([result2], [undefined]); //undefined test
+  assertEqual(result2, undefined); //undefined test
 
   //test for match with 3 stars
 
@@ -69,7 +56,7 @@ const testingFindKey = () => {
     },
     (x) => x.stars === 3
   );
-  assertArraysEqual([result3], ["Akaleri"]);
+  assertEqual(result3, "Akaleri");
 
   const result4 = findKey(
     {
@@ -82,10 +69,10 @@ const testingFindKey = () => {
     },
     (x) => x.stars === 1
   );
-  assertArraysEqual([result4], ["Blue Hill"]); //test for 1 star
+  assertEqual(result4, "Blue Hill"); //test for 1 star
 
 
-  assertArraysEqual([findKey({}, (x) => x.stars === 1)], [undefined]); //empty object test
+  assertEqual(findKey({}, (x) => x.stars === 1), undefined); //empty object test
 };
 
 
