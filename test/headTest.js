@@ -9,7 +9,7 @@ describe("#head", () => {
   it("returns '5' for ['5']", () => {
     assert.strictEqual(head(['5']), '5');
   });
-
+// Test that the function correctly returns the first element of a string array
   it("returns 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
     assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
   });
