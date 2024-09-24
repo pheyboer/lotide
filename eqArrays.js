@@ -9,5 +9,5 @@ const eqArrays = function(array1, array2) {
   }
   return true;
 };
-
+//function returns false when it finds a mismatch
 module.exports = eqArrays;
