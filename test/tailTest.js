@@ -1,21 +1,23 @@
 const assertEqual = require("../assertEqual");
 const tail = require("../tail");
 
+
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-const tailWords = tail(words);
-
 assertEqual(words.length, 3);
+//test with multiple elements
 
-assertEqual(tailWords.length, 2);
-assertEqual(tailWords[0], "Lighthouse");
-assertEqual(tailWords[1], "Labs");
+assertEqual(tail(words).length, 2); //tail function removes first element
+assertEqual(tail(words)[0], "Lighthouse"); //check the first and second elements
+assertEqual(tail(words)[1], "Labs");
 
 const singleElementArray = ["Only One"];
-const singleTail = tail(singleElementArray);
+//test with 1 element
 assertEqual(singleElementArray.length, 1);
-assertEqual(singleTail.length, 0);
+assertEqual(tail(singleElementArray).length, 0);
 
 const emptyArray = [];
-const emptyTail = tail(emptyArray);
+//test with empty array
 assertEqual(emptyArray.length, 0);
-assertEqual(emptyTail.length, 0);
+assertEqual(tail(emptyArray).length, 0);
+
+//removed intermediate variables
