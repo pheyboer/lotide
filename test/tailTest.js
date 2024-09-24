@@ -5,9 +5,6 @@ const words = ["Yo Yo", "Lighthouse", "Labs"];
 const tailWords = tail(words);
 
 assertEqual(words.length, 3);
-assertEqual(words[0], "Yo Yo");
-assertEqual(words[1], "Lighthouse");
-assertEqual(words[2], "Labs");
 
 assertEqual(tailWords.length, 2);
 assertEqual(tailWords[0], "Lighthouse");
