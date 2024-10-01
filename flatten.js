@@ -27,12 +27,12 @@ const eqArrays = function(array1, array2) {
 const flatten = function(array) {
   let flatArray = [];
   for (const item of array) {
-    if (Array.isArray(item)) {
-      for (const innerItem of item) {
-        flatArray.push(innerItem);
+    if (Array.isArray(item)) { //loop through array and check if array
+      for (const innerItem of item) { //if it is check inside for array
+        flatArray.push(innerItem); //push inner array to new variable flat array
       }
     } else {
-      flatArray.push(item);
+      flatArray.push(item); // if its not nested push it to flat array
     }
   }
   return flatArray;
