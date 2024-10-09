@@ -11,6 +11,7 @@ const middle = function(array) {
     const middleIndex1 = (length / 2) - 1;
     const middleIndex2 = length / 2;
     return [array[middleIndex1], array[middleIndex2]];
+    
   }
 };
 //first check if array is less than 3 elements
