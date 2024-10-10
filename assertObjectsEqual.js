@@ -34,7 +34,7 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-//assertObjectsEqual function
+//assertObjectsEqual function - compare if two objects are equal
 
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require("util").inspect;
@@ -56,4 +56,3 @@ assertObjectsEqual(obj1, obj2);
 
 console.log('Test 2: Should fail');
 assertObjectsEqual(obj1, obj3);
-
