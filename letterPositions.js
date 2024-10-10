@@ -39,28 +39,7 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+// Function creates an object that maps each letter in a sentence to an array of its indices
+
 console.log(letterPositions("hello"));
 assertArraysEqual(letterPositions("hello").e, [1]);
-
-//implement function letterPositions
-//define object structure to return
-//letterPositions will return all the indices in the string where each character is found - counting letter positions
-//results in an object that maps each letter in the string to an array of its indices
-//write a test with a small string "hello" -
-//we want to see the string hello laid out telling us at which index each letter is
-//return object keys are letters.
-//values are indices
-/*
-{
-  h: [0],
-  e: [1],
-  l: [2, 3]
-  o: [4]
-}
-*/
-
-//iterate over the sentence
-//skip spaces
-//update the results object
-
-
