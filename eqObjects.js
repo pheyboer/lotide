@@ -39,6 +39,8 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+//Function to check if two objects are equal
+
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
@@ -46,10 +48,3 @@ assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
 assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
-
-
-
-
-
-
-//Implement the definition for function eqObjects which will take in two objects and returns true or false, based on a perfect match.
