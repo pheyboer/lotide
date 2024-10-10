@@ -7,7 +7,6 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-
 //eqArrays function
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
@@ -21,9 +20,6 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-//flatten function
-//loop through outer array
-//loop through inner array
 const flatten = function(array) {
   let flatArray = [];
   for (const item of array) {
@@ -37,5 +33,7 @@ const flatten = function(array) {
   }
   return flatArray;
 };
+
+//Function takes array that could be nested and returns one new array
 
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
