@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
 };
 
 
-const findKey = (obj, callback) => { //defined function findKey that loops through keys of object with use of arrow function
+const findKey = (obj, callback) => { 
   for (const key in obj) {
     if (callback(obj[key])) {
       return key;
@@ -16,6 +16,8 @@ const findKey = (obj, callback) => { //defined function findKey that loops throu
   }
   return undefined;
 };
+//Function loops through keys of object to find key defined by callback function
+
 //use example in compass and use assertEqual to define new variable testingFindKey and make catagorey for each result
 const testingFindKey = () => {
   const result1 = findKey(
@@ -29,7 +31,7 @@ const testingFindKey = () => {
     },
     (x) => x.stars === 2 //test for 2 stars
   );
-  assertEqual(result1, "noma"); 
+  assertEqual(result1, "noma");
 
   const result2 = findKey(
     {
@@ -78,9 +80,3 @@ const testingFindKey = () => {
 
 
 testingFindKey();
-
-
-
-//it should scan the object and return the first key for which the callback returns a truthy value.
-//if no key found return undefined
-//core logic is from findKeyByValue
