@@ -1,6 +1,6 @@
 {
   "name": "@pheyboer/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Replica Directory: Lotide",
   "main": "index.js",
   "directories": {
