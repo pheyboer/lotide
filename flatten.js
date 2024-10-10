@@ -34,6 +34,5 @@ const flatten = function(array) {
   return flatArray;
 };
 
+module.exports = flatten;
 //Function takes array that could be nested and returns one new array
-
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
