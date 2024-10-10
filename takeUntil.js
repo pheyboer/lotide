@@ -18,9 +18,6 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-//eqArrays and assertArraysEqual functions above
-//new takeUntil function below with assertions
-
 
 const takeUntil = function(array, callback) {
   const result = [];
@@ -33,10 +30,7 @@ const takeUntil = function(array, callback) {
   }
   return result;
 };
-// created an empty array to store items
-// iterate through each item of input array
-// check if callback returns truthy value -if it does exit, if it doesnt push item into the new result array
-//return result
+//Function creates new array and collects elements until callback is satified
 
 //test cases using data1 results 1 examples
 
@@ -53,14 +47,3 @@ const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
 assertArraysEqual(results2, ["I've", "been", "to", "Hollywood"]);
 assertArraysEqual(results2, ["I've", "been", "to", "Hollywood", ",", "been"]);
-
-
-
-
-
-
-//takeUntil will take in 2 parameters
-// the array to work with
-//and the callback (lodash calls this "predicate")
-//callback should only be provided one value until returns truthy value
-//because takeUntil returns arrays use assertArraysEqual to compare its return value against unexpected array
