@@ -39,7 +39,5 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
 // Function creates an object that maps each letter in a sentence to an array of its indices
-
-console.log(letterPositions("hello"));
-assertArraysEqual(letterPositions("hello").e, [1]);
