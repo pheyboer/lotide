@@ -7,3 +7,4 @@ const assertEqual = function(actual, expected) {
 };
 
 module.exports = assertEqual;
+//Function to compare if two values are equal
