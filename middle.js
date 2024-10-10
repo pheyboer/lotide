@@ -1,4 +1,4 @@
-//function returns the middle element of an array
+//Function returns the middle element of an array
 const middle = function(array) {
   const length = array.length;
   if (length < 3) {
@@ -14,8 +14,5 @@ const middle = function(array) {
     
   }
 };
-//first check if array is less than 3 elements
-  // cant be a middle
-//check if the length of array is odd, then calculate middle
-//lastly check if array is even by calculating middle indicies, returns array with both middle elements
+
 module.exports = middle;
