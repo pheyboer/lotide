@@ -28,7 +28,7 @@ const without = function(source, itemsToRemove) {
   }
   return resultArray;
 };
-
+//Function creates new array without specific elements
 
 const words = ["hello", "world", "lighthouse"];
 const wordsCopy = [...words];
@@ -40,4 +40,3 @@ assertArraysEqual(words, wordsCopy);
 
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); //this one will fail
-
