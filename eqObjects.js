@@ -39,12 +39,5 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+module.exports = eqObjects;
 //Function to check if two objects are equal
-
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
-
-
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
