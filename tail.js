@@ -3,3 +3,4 @@ const tail = function(array) {
 };
 
 module.exports = tail;
+//Function to return new array containing all elements except first one of initial array
