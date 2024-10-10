@@ -1,7 +1,7 @@
-const { assert } = require("chai");
+const assert = require('chai').assert;
 const middle = require("../middle");
 
-describe("#middle", () => {
+describe("middle", () => {
   it("should return empty array when given array less than 3 elements", () => {
     assert.deepEqual(middle([1]), []); //check for 1 element
     assert.deepEqual(middle([1, 2]), []); //check for 2 elements
