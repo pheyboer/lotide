@@ -27,7 +27,7 @@ const map = function(array, callback) {
   }
   return results;
 };
-
+//Function returns an array based on results of the callback function
 
 //test cases
 //1: first letter of each word
@@ -49,11 +49,3 @@ assertArraysEqual(wordLengths, [6, 7, 2, 5, 3]);  //should be true
 
 const reversedWords = map(words, (word) => word.split('').reverse().join(''));
 assertArraysEqual(reversedWords, ['dnuorg', 'lortnoc', 'ot', 'rojam', 'mot']);   //this should be true
-
-
-
-
-//map function will take in 2 arguments
-//and array to map
-//a callback function
-//map function will return a new array based on the results of the callback function
