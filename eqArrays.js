@@ -1,4 +1,4 @@
-//function checks if 2 arrays are equal for length and content
+//Function checks if two arrays are equal for length and content
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -10,5 +10,5 @@ const eqArrays = function(array1, array2) {
   }
   return true;
 };
-//function returns false when it finds a mismatch
+//Function returns false when it finds a mismatch
 module.exports = eqArrays;
