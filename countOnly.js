@@ -20,7 +20,7 @@ const countOnly = function(allItems, itemsToCount) {
   }
   return results;
 };
-
+//Function to count only specific items from an array and return count of each item
 
 const firstNames = [
   "Karl",
